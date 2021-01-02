@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    tools:context=".VerifyOtp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/northan" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="40dp"
+        android:text="Please Wait OTP is sending..."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#F44336" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="The OTP will automatically set in the input box if not please type the code and Sign In"
+        android:textAlignment="center"
+        android:textColor="#F44336" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView1"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:hint="Enter Code"
+
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+
+
+
+
+        android:layout_marginTop="40dp"
+        android:maxLength="6" />
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#F44336"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonSignIn1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Resend"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+
+
+
+
+</LinearLayout>
